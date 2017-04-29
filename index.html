@@ -82,7 +82,7 @@ $.ajax("https://www.cricbuzz.com/live-cricket-scorecard/18155/gl-vs-mi-35th-matc
         // }
 
         // $("#scoreUpdate").html("<li>"+data.score.batting.innings[0].score+ "/"+data.score.batting.innings[0].wkts+"</li>") 
-        $("#scoreUpdate").html(data);
+        $("#scoreUpdate").html(data.replace("http","https"));
 
 });
 
