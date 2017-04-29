@@ -74,7 +74,9 @@ function test(){
 // });
 
 
-$.ajax("https://www.cricbuzz.com/live-cricket-scorecard/18155/gl-vs-mi-35th-match-indian-premier-league-2017").done(function(data){
+$.ajax("https://www.cricbuzz.com/live-cricket-scorecard/18155/gl-vs-mi-35th-match-indian-premier-league-2017",{
+    dataType: "jsonp",
+}).done(function(data){
         data = data.replace("http","https");
         // if(data.comm_lines[0].comm!==undefined && z!==data.comm_lines[0].comm){
         //         z = data.comm_lines[0].comm;
